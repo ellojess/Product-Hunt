@@ -13,6 +13,7 @@
 		C06406DB24465BF50002ADF4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C06406D924465BF50002ADF4 /* Main.storyboard */; };
 		C06406DD24465BF80002ADF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C06406DC24465BF80002ADF4 /* Assets.xcassets */; };
 		C06406E024465BF80002ADF4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C06406DE24465BF80002ADF4 /* LaunchScreen.storyboard */; };
+		C06406E82446784D0002ADF4 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06406E72446784D0002ADF4 /* Post.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		C06406DC24465BF80002ADF4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C06406DF24465BF80002ADF4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C06406E124465BF80002ADF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C06406E72446784D0002ADF4 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				C06406D324465BF50002ADF4 /* AppDelegate.swift */,
 				C06406D524465BF50002ADF4 /* SceneDelegate.swift */,
 				C06406D724465BF50002ADF4 /* FeedViewController.swift */,
+				C06406E72446784D0002ADF4 /* Post.swift */,
 				C06406D924465BF50002ADF4 /* Main.storyboard */,
 				C06406DC24465BF80002ADF4 /* Assets.xcassets */,
 				C06406DE24465BF80002ADF4 /* LaunchScreen.storyboard */,
@@ -141,6 +144,7 @@
 				C06406D824465BF50002ADF4 /* FeedViewController.swift in Sources */,
 				C06406D424465BF50002ADF4 /* AppDelegate.swift in Sources */,
 				C06406D624465BF50002ADF4 /* SceneDelegate.swift in Sources */,
+				C06406E82446784D0002ADF4 /* Post.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
