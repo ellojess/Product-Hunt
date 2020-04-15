@@ -19,7 +19,7 @@
                                 <rect key="frame" x="0.0" y="44" width="375" height="623"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="postCell" rowHeight="250" id="RRE-mX-H8v">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="postCell" rowHeight="250" id="RRE-mX-H8v" customClass="PostTableViewCell" customModule="Product_Hunt" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="250"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="RRE-mX-H8v" id="YDD-80-j8W">
@@ -55,6 +55,13 @@
                                                                 </label>
                                                             </subviews>
                                                         </stackView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tagline" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EKe-RM-irK">
+                                                            <rect key="frame" x="0.0" y="213" width="41" height="15"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
                                                     </subviews>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                     <constraints>
@@ -70,22 +77,21 @@
                                                         <constraint firstItem="eIE-hr-kgj" firstAttribute="top" secondItem="eF7-wW-Nzn" secondAttribute="top" constant="3" id="ziV-Sb-ahY"/>
                                                     </constraints>
                                                 </view>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Tagline" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EKe-RM-irK">
-                                                    <rect key="frame" x="15" y="224" width="41" height="15"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="trailingMargin" secondItem="eF7-wW-Nzn" secondAttribute="trailing" id="616-9V-UhK"/>
-                                                <constraint firstItem="EKe-RM-irK" firstAttribute="top" secondItem="shX-u2-zUE" secondAttribute="bottom" constant="29" id="7kz-gT-A62"/>
                                                 <constraint firstItem="eF7-wW-Nzn" firstAttribute="top" secondItem="YDD-80-j8W" secondAttribute="topMargin" id="WyV-Wp-TyF"/>
-                                                <constraint firstItem="EKe-RM-irK" firstAttribute="leading" secondItem="mcd-Kp-6H0" secondAttribute="leading" id="mZN-nv-dMG"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="eF7-wW-Nzn" secondAttribute="bottom" id="p3t-AQ-nxy"/>
                                                 <constraint firstItem="eF7-wW-Nzn" firstAttribute="leading" secondItem="YDD-80-j8W" secondAttribute="leadingMargin" id="zbx-Ix-QtL"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="commentsCountLabel" destination="5da-sF-3TU" id="NI8-XM-SZT"/>
+                                            <outlet property="nameLabel" destination="mcd-Kp-6H0" id="XI2-O6-cFi"/>
+                                            <outlet property="previewImageView" destination="shX-u2-zUE" id="A2T-Lh-qqt"/>
+                                            <outlet property="taglineLabel" destination="EKe-RM-irK" id="Bbb-HT-VOm"/>
+                                            <outlet property="votesCountLabel" destination="DFd-gT-1MZ" id="8BR-vA-6vW"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
