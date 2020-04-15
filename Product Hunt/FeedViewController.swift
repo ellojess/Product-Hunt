@@ -30,8 +30,11 @@ extension FeedViewController: UITableViewDataSource {
 
    /// Creates and configures each cell.
    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-       return UITableViewCell()
-  }
+      // dequeue and return an available cell, instead of creating a new cell
+      let cell = tableView.dequeueReusableCell(withIdentifier: "postCell", for: indexPath) as! PostTableViewCell
+
+      return cell
+   }
 }
 
 // MARK: UITableViewDelegate
