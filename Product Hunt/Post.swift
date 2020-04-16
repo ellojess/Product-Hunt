@@ -26,17 +26,17 @@ struct PostList: Decodable {
 
 // MARK: Decodable
 extension Post: Decodable {
-// properties within a Post returned from the Product Hunt API that we want to extract the info from.
-enum PostKeys: String, CodingKey {
-    // first three match our variable names for our Post struct
-    case id
-    case name
-    case tagline
-    // these three need to be mapped since they're named differently on the API compared to our struct
-    case votesCount = "votes_count"
-    case commentsCount = "comments_count"
-    case previewImageURL = "screenshot_url"
-    }
+    // properties within a Post returned from the Product Hunt API that we want to extract the info from.
+    enum PostKeys: String, CodingKey {
+        // first three match our variable names for our Post struct
+        case id
+        case name
+        case tagline
+        // these three need to be mapped since they're named differently on the API compared to our struct
+        case votesCount = "votes_count"
+        case commentsCount = "comments_count"
+        case previewImageURL = "screenshot_url"
+        }
     
     enum PreviewImageURLKeys: String, CodingKey {
        // for all posts, we only want the 850px image
