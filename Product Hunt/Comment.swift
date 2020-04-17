@@ -12,8 +12,8 @@ struct Comment: Decodable {
  let id: Int
  let body: String
     
-    struct CommentApiResponse: Decodable {
-       let comments: [Comment]
-    }
-    
+}
+
+struct CommentApiResponse: Decodable {
+   let comments: [Comment]
 }

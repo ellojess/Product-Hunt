@@ -12,28 +12,35 @@ class CommentsViewController: UIViewController {
 
     @IBOutlet weak var commentsTableView: UITableView!
     
-    var comments: [String]! = []{
-       didSet {
-        // refresh the commentsTableView
-       }
+    var comments: [Comment] = [] {
+        didSet {
+            commentsTableView.reloadData()
+        }
     }
+
+     var postID: Int!
+
+     var networkManager = NetworkManager()
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
         commentsTableView.delegate = self
         commentsTableView.dataSource = self
+        updateComments()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func updateComments() {
+       // Similar to what we did for posts
+       networkManager.getComments(postID) { result in
+           switch result {
+           case let .success(comments):
+             self.comments = comments
+           case let .failure(error):
+             print(error)
+           }
+       }
     }
-    */
 
 }
 
@@ -49,7 +56,7 @@ func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> 
    let cell = tableView.dequeueReusableCell(withIdentifier: "commentCell", for: indexPath) as! CommentTableViewCell
 
    let comment = comments[indexPath.row]
-   cell.commentTextView.text = comment
+   cell.commentTextView.text = comment.body
    return cell
  }
 }
