@@ -19,6 +19,7 @@
 		C06406E024465BF80002ADF4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C06406DE24465BF80002ADF4 /* LaunchScreen.storyboard */; };
 		C06406E82446784D0002ADF4 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06406E72446784D0002ADF4 /* Post.swift */; };
 		C06406EA24469FFC0002ADF4 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C06406E924469FFC0002ADF4 /* PostTableViewCell.swift */; };
+		C07BE3862449142D00D5FD68 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = C07BE3852449142D00D5FD68 /* Comment.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		C06406E124465BF80002ADF4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C06406E72446784D0002ADF4 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		C06406E924469FFC0002ADF4 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		C07BE3852449142D00D5FD68 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +75,7 @@
 				C06406D724465BF50002ADF4 /* FeedViewController.swift */,
 				C06406E924469FFC0002ADF4 /* PostTableViewCell.swift */,
 				C06406E72446784D0002ADF4 /* Post.swift */,
+				C07BE3852449142D00D5FD68 /* Comment.swift */,
 				C02F7BB12447DADC009A91B8 /* NetworkManager.swift */,
 				C02F7BB32447F156009A91B8 /* Constants.swift */,
 				C06406D924465BF50002ADF4 /* Main.storyboard */,
@@ -161,6 +164,7 @@
 				C06406D424465BF50002ADF4 /* AppDelegate.swift in Sources */,
 				C06406EA24469FFC0002ADF4 /* PostTableViewCell.swift in Sources */,
 				C02F7BB8244858B1009A91B8 /* CommentTableViewCell.swift in Sources */,
+				C07BE3862449142D00D5FD68 /* Comment.swift in Sources */,
 				C02F7BB624485289009A91B8 /* CommentsViewController.swift in Sources */,
 				C02F7BB42447F156009A91B8 /* Constants.swift in Sources */,
 				C06406D624465BF50002ADF4 /* SceneDelegate.swift in Sources */,
