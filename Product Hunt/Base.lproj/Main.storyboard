@@ -55,13 +55,6 @@
                                                                 </label>
                                                             </subviews>
                                                         </stackView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tagline" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EKe-RM-irK">
-                                                            <rect key="frame" x="0.0" y="213" width="41" height="15"/>
-                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
                                                     </subviews>
                                                     <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                                     <constraints>
@@ -77,10 +70,20 @@
                                                         <constraint firstItem="eIE-hr-kgj" firstAttribute="top" secondItem="eF7-wW-Nzn" secondAttribute="top" constant="3" id="ziV-Sb-ahY"/>
                                                     </constraints>
                                                 </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tagline" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EKe-RM-irK">
+                                                    <rect key="frame" x="15" y="224" width="40.5" height="14.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="EKe-RM-irK" secondAttribute="bottom" constant="11.5" id="5Wm-c8-74W"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="eF7-wW-Nzn" secondAttribute="trailing" id="616-9V-UhK"/>
+                                                <constraint firstItem="EKe-RM-irK" firstAttribute="leading" secondItem="YDD-80-j8W" secondAttribute="leading" constant="15" id="Hfr-bK-cyE"/>
+                                                <constraint firstAttribute="bottom" secondItem="EKe-RM-irK" secondAttribute="bottom" constant="11.5" id="OUd-0v-qWR"/>
                                                 <constraint firstItem="eF7-wW-Nzn" firstAttribute="top" secondItem="YDD-80-j8W" secondAttribute="topMargin" id="WyV-Wp-TyF"/>
+                                                <constraint firstItem="EKe-RM-irK" firstAttribute="leading" secondItem="YDD-80-j8W" secondAttribute="leading" constant="15" id="cmm-hm-GR2"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="eF7-wW-Nzn" secondAttribute="bottom" id="p3t-AQ-nxy"/>
                                                 <constraint firstItem="eF7-wW-Nzn" firstAttribute="leading" secondItem="YDD-80-j8W" secondAttribute="leadingMargin" id="zbx-Ix-QtL"/>
                                             </constraints>
